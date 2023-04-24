@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  margin: 0;
+  background-color: #0B2434;
+}
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3em;
+}
+main {
+  background-color: #F5F5F5;
+  height: 500px;
+  width: 100%;
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+article {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 2em;
+}
+
+section {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+button{
+  border: none;
+  background-color:#0B2434;
+  padding: 1em;
+  border-radius: 1em;
+  cursor: pointer;
+  color:#F5F5F5;
+  width: 5em;
+  font-size: larger;
+  font-weight: bolder;
+  width: max-content;
+}
+button:focus {
+  outline: none;
+}
+
+button:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+ p {
+  color: #0B2434;
+  font-size: larger;
+  font-weight: bolder;
+}
+h1{
+  color: #0B2434;
+}
+
+/* media queries */
+@media only screen and (max-width: 768px) {
+  main {
+    height: 50vh;
+  }
+  
+  section {
+    height: 40px;
+    width: 25px;
+  }
+  
+  button {
+    font-size: small;
+    width: max-content;
+  }
+  
+   h1, h2 {
+    font-size: 1.5rem;
+  }
+  p{
+    font-weight: lighter;
+    font-size: smaller;
+  }
+}
